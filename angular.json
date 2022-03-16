@@ -30,7 +30,10 @@
               "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/helloTest.js"
+            ]
           },
           "configurations": {
             "production": {
