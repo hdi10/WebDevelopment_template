@@ -1,0 +1,28 @@
+
+.matCard{
+  background-color : #60993eff;
+  color: white;
+}
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+.example-button-row{
+  margin: 8px 8px 8px 0;
+}
+
+html,body{
+/* CSS HEX */
+--lilac-luster: #b098a4ff;
+--gainsboro: #dbd9dbff;
+--cyber-grape: #5b4e77ff;
+--may-green: #60993eff;
+--green-ryb: #5fad41ff;
+
+/* CSS HSL */
+--lilac-luster: hsla(330, 13%, 64%, 1);
+--gainsboro: hsla(300, 3%, 85%, 1);
+--cyber-grape: hsla(259, 21%, 39%, 1);
+--may-green: hsla(98, 42%, 42%, 1);
+--green-ryb: hsla(103, 45%, 47%, 1);
+}
