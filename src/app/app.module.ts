@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AngularMaterialModule} from "./angular-material/angular-material.module";
 import {MatIconModule} from "@angular/material/icon";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
     ApiPostComponent,
     ApiDeleteComponent,
     HomeComponent,
-    TabComponent
+    TabComponent,
+    SidebarComponent
   ],
     imports: [
         BrowserModule,

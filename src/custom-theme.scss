@@ -1,35 +1,89 @@
+$indigo-palette: (
+  50: #e8eaf6,
+  100: #c5cae9,
+  200: #9fa8da,
+  300: #7986cb,
+  // ... continues to 900
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    // ... continues to 900
+  )
+);
 
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
+/* SCSS HEX */
+$lilac-luster: #b098a4ff;
+$gainsboro: #dbd9dbff;
+$cyber-grape: #5b4e77ff;
+$may-green: #60993eff;
+$green-ryb: #5fad41ff;
+
+/* SCSS HSL */
+$lilac-luster: hsla(330, 13%, 64%, 1);
+$gainsboro: hsla(300, 3%, 85%, 1);
+$cyber-grape: hsla(259, 21%, 39%, 1);
+$may-green: hsla(98, 42%, 42%, 1);
+$green-ryb: hsla(103, 45%, 47%, 1);
+
+/* SCSS RGB */
+$lilac-luster: rgba(176, 152, 164, 1);
+$gainsboro: rgba(219, 217, 219, 1);
+$cyber-grape: rgba(91, 78, 119, 1);
+$may-green: rgba(96, 153, 62, 1);
+$green-ryb: rgba(95, 173, 65, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-right: linear-gradient(90deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-bottom: linear-gradient(180deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-left: linear-gradient(270deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-top-right: linear-gradient(45deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-bottom-right: linear-gradient(135deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-top-left: linear-gradient(225deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-bottom-left: linear-gradient(315deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-radial: radial-gradient(#b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+
+
 @use '@angular/material' as mat;
-// Plus imports for other components in your app.
 
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
+$my-primary: mat.define-palette(mat.$lime-palette, 500);
+$my-accent: mat.define-palette(mat.$red-palette, A200, A100, A400);
+
+// The "warn" palette is optional and defaults to red if not specified.
+$my-warn: mat.define-palette(mat.$red-palette);
+
 @include mat.core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$zelkulon-web-primary: mat.define-palette(mat.$indigo-palette);
-$zelkulon-web-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+/* SCSS HEX */
+$lilac-luster: #b098a4ff;
+$gainsboro: #dbd9dbff;
+$cyber-grape: #5b4e77ff;
+$may-green: #60993eff;
+$green-ryb: #5fad41ff;
 
-// The warn palette is optional (defaults to red).
-$zelkulon-web-warn: mat.define-palette(mat.$red-palette);
+/* SCSS HSL */
+$lilac-luster: hsla(330, 13%, 64%, 1);
+$gainsboro: hsla(300, 3%, 85%, 1);
+$cyber-grape: hsla(259, 21%, 39%, 1);
+$may-green: hsla(98, 42%, 42%, 1);
+$green-ryb: hsla(103, 45%, 47%, 1);
 
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$zelkulon-web-theme: mat.define-light-theme((
-  color: (
-    primary: $zelkulon-web-primary,
-    accent: $zelkulon-web-accent,
-    warn: $zelkulon-web-warn,
-  )
-));
+/* SCSS RGB */
+$lilac-luster: rgba(176, 152, 164, 1);
+$gainsboro: rgba(219, 217, 219, 1);
+$cyber-grape: rgba(91, 78, 119, 1);
+$may-green: rgba(96, 153, 62, 1);
+$green-ryb: rgba(95, 173, 65, 1);
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-component-themes($zelkulon-web-theme);
-
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-right: linear-gradient(90deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-bottom: linear-gradient(180deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-left: linear-gradient(270deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-top-right: linear-gradient(45deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-bottom-right: linear-gradient(135deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-top-left: linear-gradient(225deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-bottom-left: linear-gradient(315deg, #b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
+$gradient-radial: radial-gradient(#b098a4ff, #dbd9dbff, #5b4e77ff, #60993eff, #5fad41ff);
