@@ -1,8 +1,8 @@
 export class SampleData {
-  id: number;
-  name: string;
-  jobtype: string;
-  email: string;
-  address: string;
-  imageUrl: string;
+  id: number | undefined;
+  name: string | undefined;
+  jobtype: string | undefined;
+  email: string | undefined;
+  address: string | undefined;
+  imageUrl: string | undefined;
 }

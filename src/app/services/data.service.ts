@@ -50,7 +50,7 @@ export class DataService {
   }
 
   // Delete item by id
-  deleteItem(id) {
+  deleteItem(id: string) {
     console.log("Inside Delete API_CALL");
     return this.http
       .delete<SampleData>(this.base_path + '/' + id, this.httpOptions)
