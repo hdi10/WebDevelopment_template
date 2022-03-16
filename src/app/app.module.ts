@@ -14,6 +14,7 @@ import {AngularMaterialModule} from "./angular-material/angular-material.module"
 import {MatIconModule} from "@angular/material/icon";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
     ApiDeleteComponent,
     HomeComponent,
     TabComponent,
-    SidebarComponent
+    SidebarComponent,
+    LoginComponent
   ],
     imports: [
         BrowserModule,

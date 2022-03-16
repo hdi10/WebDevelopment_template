@@ -1,27 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-
-html, body { height: 100%; }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-
-
-
-  /* CSS HEX */
-  --lilac-luster: #b098a4ff;
-  --gainsboro: #dbd9dbff;
-  --cyber-grape: #5b4e77ff;
-  --may-green: #60993eff;
-  --green-ryb: #5fad41ff;
-
-  /* CSS HSL */
-  --lilac-luster: hsla(330, 13%, 64%, 1);
-  --gainsboro: hsla(300, 3%, 85%, 1);
-  --cyber-grape: hsla(259, 21%, 39%, 1);
-  --may-green: hsla(98, 42%, 42%, 1);
-  --green-ryb: hsla(103, 45%, 47%, 1);
-
-}
-
