@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit} from '@angular/core';
+
 
 declare const myTest: any;
+var login_attempts = 3;
 
 @Component({
   selector: 'app-login',
@@ -9,21 +11,51 @@ declare const myTest: any;
 })
 
 
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit{
 
   hide = true;
+  username: string | undefined;
+  password: string | undefined;
+  form: any;
+  formControlName: any;
 
+  constructor() {
 
-  onClick(){
-    console.log("test")
-    myTest();
   }
-
-  constructor() { }
 
   ngOnInit(): void {
 
+  }
 
+  LoginUser(){
+    if(this.username == "Admin" && this.password =="Admin"){
+      console.log("welcome")
+      window.alert("succes");
+      return true;
+    } else {
+  if (login_attempts == 0) {
+  alert("No more Login Attempts")
+} else {
+  login_attempts = login_attempts - 1;
+  alert("Login Credentials Incorrect. " + login_attempts + " attempts left")
+  if (login_attempts == 0) {
+
+  }
+}
+
+}
+return false;
+  }
+
+  onClick(){
+    console.log("test")
+
+
+
+
+
+
+    myTest();
   }
 
 }
