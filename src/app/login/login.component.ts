@@ -1,4 +1,5 @@
 import { Component,OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 
 declare const myTest: any;
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit{
   form: any;
   formControlName: any;
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
@@ -30,7 +31,12 @@ export class LoginComponent implements OnInit{
   LoginUser(){
     if(this.username == "Admin" && this.password =="Admin"){
       console.log("welcome")
+
+
+
       window.alert("succes");
+
+      this.router.navigate(['home']);
       return true;
     } else {
   if (login_attempts == 0) {

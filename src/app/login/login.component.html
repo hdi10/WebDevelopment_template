@@ -1,13 +1,13 @@
 <h1>Admin Login</h1>
 <p>
-  <mat-form-field appearance="outline" [formGroup]="form">
+  <mat-form-field appearance="outline" class="container">
     <mat-label>Enter your username</mat-label>
     <input matInput placeholder="Placeholder" type="text" name="username" [(ngModel)]="username" id="username" required>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>Hint</mat-hint>
   </mat-form-field>
 <br><br>
-  <mat-form-field appearance="outline" [formGroup]="form">
+  <mat-form-field appearance="outline" class="container">
     <mat-label>Enter your password</mat-label>
     <input matInput  [type]="hide ? 'password' : 'text'" type="password" name="password" [(ngModel)]="password" id="password" required>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
