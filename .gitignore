@@ -1,29 +1,4 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/database,angular,tex
-# Edit at https://www.toptal.com/developers/gitignore?templates=database,angular,tex
-
-### Angular ###
-## Angular ##
-# compiled output
-dist/
-tmp/
-app/**/*.js
-app/**/*.js.map
-
-# dependencies
-node_modules/
-bower_components/
-
-# IDEs and editors
-.idea/
-
-# misc
-.sass-cache/
-connect.lock/
-coverage/
-libpeerconnection.log/
-npm-debug.log
-testem.log
 typings/
 .angular/
 
@@ -351,16 +326,3 @@ TSWLatexianTemp*
 # xwatermark package
 *.xwm
 
-# REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
-# option is specified. Footnotes are the stored in a file with suffix Notes.bib.
-# Uncomment the next line to have this generated file ignored.
-#*Notes.bib
-
-### TeX Patch ###
-# LIPIcs / OASIcs
-*.vtc
-
-# glossaries
-*.glstex
-
-# End of https://www.toptal.com/developers/gitignore/api/database,angular,tex
