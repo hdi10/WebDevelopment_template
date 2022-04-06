@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {DataService} from "../services/data.service";
-import {SampleData} from "../models/sample-data";
+import { DataService } from "../services/data.service";
+import { SampleData } from "../models/sample-data";
 
 @Component({
   selector: 'app-api-post',
@@ -12,10 +12,7 @@ export class ApiPostComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getList().subscribe((SampleData: SampleData)=> {
-      this.employees = SampleData;
-      console.log(SampleData)
-    })
+
   }
 
 }

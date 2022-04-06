@@ -3,13 +3,14 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Observable, throwError } from 'rxjs';
 import { SampleData } from '../models/sample-data';
 import { retry, catchError } from 'rxjs/operators';
+import { Product } from '../product.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
   //fake server as base_path
-  base_path = 'http://localhost:3000/employees';
+  base_path = 'http://localhost:8081/products';
 
   constructor(private http: HttpClient) {
   }
@@ -38,11 +39,11 @@ export class DataService {
       'Something bad happened; please try again later.');
   };
 
-// Get Employees data
-  getList(): Observable<SampleData> {
-    console.log("Inside getEmployeeList API_CALL");
+  // Get Product data
+  getList(): Observable<Product> {
+    console.log("Inside getProductList API_CALL");
     return this.http
-      .get<SampleData>(this.base_path)
+      .get<Product>(this.base_path)
       .pipe(
         retry(2),
         catchError(this.handleError)
@@ -53,7 +54,7 @@ export class DataService {
   deleteItem(id: string) {
     console.log("Inside Delete API_CALL");
     return this.http
-      .delete<SampleData>(this.base_path + '/' + id, this.httpOptions)
+      .delete<Product>(this.base_path + '/' + id, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError)

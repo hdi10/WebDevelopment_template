@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../bestand/bestand.component';
 import { SampleData } from '../models/sample-data';
-import {DataService} from "../services/data.service";
+import { DataService } from "../services/data.service";
 
 @Component({
   selector: 'app-api-get',
@@ -12,10 +13,8 @@ export class ApiGetComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getList().subscribe((SampleData: SampleData) => {
-      this.employees = SampleData;
-      console.log(SampleData)
-    })
+
+
   }
 
 }
