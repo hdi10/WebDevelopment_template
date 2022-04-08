@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ApiDeleteComponent } from './api-delete.component';
+import { ProductListNewComponent } from './product-list-new.component';
 
-describe('ApiDeleteComponent', () => {
-  let component: ApiDeleteComponent;
-  let fixture: ComponentFixture<ApiDeleteComponent>;
+describe('ProductListNewComponent', () => {
+  let component: ProductListNewComponent;
+  let fixture: ComponentFixture<ProductListNewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ApiDeleteComponent ]
+      declarations: [ ProductListNewComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ApiDeleteComponent);
+    fixture = TestBed.createComponent(ProductListNewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

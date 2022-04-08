@@ -1,0 +1,20 @@
+<p>product-delete-form works!</p>
+
+<div class="card my-5">
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit(product.id)" #productForm="ngForm">
+
+
+            <div class="form-group">
+                <label for="name">Produktname</label>
+                <input type="text" [(ngModel)]="product.id" class="form-control" id="name" name="name"
+                    placeholder="Enter your name" required #name="ngModel">
+            </div>
+
+
+
+            <button type="submit" [disabled]="!productForm.form.valid" class="btn btn-info">Submit</button>
+
+        </form>
+    </div>
+</div>

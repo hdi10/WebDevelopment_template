@@ -1,4 +1,31 @@
-<div class="example-button-row">
-    <button (click)="onBestand()" mat-raised-button color="primary">Bestand</button>
-    <button (click)="onEinkaufsliste()" mat-raised-button color="primary">Einkaufsliste</button>
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+
+
+            <div class="example-button-row">
+
+
+
+                <button class="button login__submit" (click)="onBestand()">
+                    <span class="button__text" mat-raised-button color="primary">Bestand</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>
+
+
+                <button class="button login__submit" (click)="onEinkaufsliste()">
+                    <span class="button__text" mat-raised-button color="primary">Einkaufsliste</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+    </div>
 </div>

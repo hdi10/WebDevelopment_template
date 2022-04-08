@@ -1,0 +1,30 @@
+<div class="card my-5">
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit()" #productForm="ngForm">
+
+
+            <div class="form-group">
+                <label for="name">Produktname</label>
+                <input type="text" [(ngModel)]="product.name" class="form-control" id="name" name="name"
+                    placeholder="Enter your name" required #name="ngModel">
+            </div>
+
+            <div class="form-group">
+                <label for="product_nr">Produktnr</label>
+                <input type="text" [(ngModel)]="product.product_nr" class="form-control" id="product_nr"
+                    name="product_nr" placeholder="Enter product nr" #product_nr="ngModel">
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Barcode EAN</label>
+                <input type="text" [(ngModel)]="product.ean" class=" form-control" id="email" name="email"
+                    placeholder="Enter your email address" required #email="ngModel">
+
+            </div>
+
+            <button type="submit" [disabled]="!productForm.form.valid" class="btn btn-info">Submit</button>
+            <button type="delete" [disabled]="!productForm.form.valid" class="btn btn-info">Delete</button>
+        </form>
+    </div>
+</div>

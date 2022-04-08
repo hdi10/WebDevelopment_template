@@ -1,5 +1,5 @@
-import { Component,OnInit} from '@angular/core';
-import {Router} from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 
 declare const myTest: any;
@@ -12,7 +12,7 @@ var login_attempts = 3;
 })
 
 
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
 
   hide = true;
   username: string | undefined;
@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit{
 
   }
 
-  LoginUser(){
-    if(this.username == "Admin" && this.password =="Admin"){
+  LoginUser() {
+    if (this.username == "Admin" && this.password == "Admin") {
       console.log("welcome")
 
 
@@ -39,21 +39,21 @@ export class LoginComponent implements OnInit{
       this.router.navigate(['home']);
       return true;
     } else {
-  if (login_attempts == 0) {
-  alert("No more Login Attempts")
-} else {
-  login_attempts = login_attempts - 1;
-  alert("Login Credentials Incorrect. " + login_attempts + " attempts left")
-  if (login_attempts == 0) {
+      if (login_attempts == 0) {
+        alert("No more Login Attempts")
+      } else {
+        login_attempts = login_attempts - 1;
+        alert("Login Credentials Incorrect. " + login_attempts + " attempts left")
+        if (login_attempts == 0) {
 
+        }
+      }
+
+    }
+    return false;
   }
-}
 
-}
-return false;
-  }
-
-  onClick(){
+  onClick() {
     console.log("test")
 
 
