@@ -26,6 +26,16 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
 
+    document.addEventListener('mousemove', (e) => {
+
+      console.log(e)
+
+      const mouseX = e.clientX;
+
+
+    })
+
+
   }
 
   LoginUser() {
