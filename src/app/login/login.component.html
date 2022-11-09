@@ -1,25 +1,62 @@
-<h1>Admin Login</h1>
-<p>
-  <mat-form-field appearance="outline" class="container">
-    <mat-label>Enter your username</mat-label>
-    <input matInput placeholder="Placeholder" type="text" name="username" [(ngModel)]="username" id="username" required>
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-<br><br>
-  <mat-form-field appearance="outline" class="container">
-    <mat-label>Enter your password</mat-label>
-    <input matInput  [type]="hide ? 'password' : 'text'" type="password" name="password" [(ngModel)]="password" id="password" required>
-    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-    </button>
-  </mat-form-field>
-  <br><br>
+<body>
+
+  <main>
+    <img id="anchor" src="../../assets/img/newmyHelloKittyColor.png" width="134" height="198">
+    <div id="eyes">
+      <img class="eye" src="../../assets/img/eye.png" width="7" height="7" style="
+      top: -22px;
+      left: 26px;
+  ">
+
+      <img class="eye" src="../../assets/img/eye.png" width="7" height="7" style="
+      top: -22px;
+      right: 32px;
+  ">
+    </div>
+  </main>
+
+  <p>test</p>
+
+</body>
 
 
 
-  <button (click)="LoginUser()"  class="btn btn-primary" >Click Me</button>
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+      <form class="login">
+        <div class="login__field">
+          <i class="login__icon fas fa-user"></i>
+          <input type="text" class="login__input" placeholder="User name / Email" name="username" [(ngModel)]="username"
+            id="username">
+        </div>
+        <div class="login__field">
+          <i class="login__icon fas fa-lock"></i>
+          <input type="password" class="login__input" placeholder="Password" name="password" [(ngModel)]="password"
+            id="password">
+        </div>
+        <button class="button login__submit" (click)="LoginUser()">
+          <span class="button__text">Log In Now</span>
 
-</p>
+          <i class="button__icon fas fa-chevron-right"></i>
+        </button>
+      </form>
+
+    </div>
+    <div class="screen__background">
+      <span class="screen__background__shape screen__background__shape4"></span>
+      <span class="screen__background__shape screen__background__shape3"></span>
+      <span class="screen__background__shape screen__background__shape2"></span>
+      <span class="screen__background__shape screen__background__shape1"></span>
+    </div>
+  </div>
+
+  <main>
+    <img id="anchor" src="../../assets/img/newmyHelloKittyColor.png" width="134" height="198">
+  </main>
+</div>
 
 
+<main>
+  <img id="anchor" src="../../assets/img/newmyHelloKittyColor.png" width="134" height="198">
+</main>
